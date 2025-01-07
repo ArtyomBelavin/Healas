@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,19 +13,25 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Healas.lt</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-            <section class="header__nav">
+            <section id="home" class="header__nav">
                 <div class="header__inner">
                     <a class="logo" href="#">
-                        <img src="images/logo.svg" alt="Логотип">
+                        <img class="logo__img" src="images/logo.svg" alt="Логотип">
                     </a>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <ul class="header__menu">
-                        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Prices</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Rules</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">About Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#price">Prices</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#footer">Rules</a></li>
                     </ul>
                     <div class="header__btn">
                         <button type="button" class="header__button btn">
@@ -71,7 +78,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="VR__glasses">
+        <section id="about" class="VR__glasses">
             <div class="container">
                 <div class="VR__glasses__inner">
                     <div class="content__left">
@@ -126,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <section class="price">
+        <section id="price" class="price">
             <div class="container">
                 <div class="price__inner">
                     <div class="price__card">
@@ -233,28 +240,33 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="container">
             <div class="footer__inner">
                 <a class="logo__footer" href="#">
                     <img src="images/logo.svg" alt="Логотип">
                 </a>
-                <p class="footer__copyright">
-                    Copyright © 2022 HEALAS.LT. All Rights Reserved.
-                </p>
-                <div class="social">
-                    <a href="#" class="footer__link">
-                        <div class="circle"><img class="social__icon" src="images/fb.svg" alt=""></div>
-                    </a>
-                    <a href="#" class="footer__link">
-                        <div class="circle"><img class="social__icon" src="images/tw.svg" alt=""></div>
-                    </a>
-                    <a href="#" class="footer__link">
-                        <div class="circle"><img class="social__icon" src="images/inst.svg" alt=""></div>
-                    </a>
+                <div class="footer__copyright">
+                    <p class="footer__copyright__descr">
+                        Copyright © 2022 HEALAS.LT. All Rights Reserved.
+                    </p>
+                    <div class="social">
+                        <a href="#" class="footer__link">
+                            <div class="circle"><img class="social__icon" src="images/fb.svg" alt=""></div>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <div class="circle"><img class="social__icon" src="images/tw.svg" alt=""></div>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <div class="circle"><img class="social__icon" src="images/inst.svg" alt=""></div>
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </footer>
+    <script src="./main.js"></script>
 </body>
+
 </html>
